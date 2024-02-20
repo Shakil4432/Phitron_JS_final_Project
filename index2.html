@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Some Questions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="accordion_container w-[80%] lg:w-[60%] m-auto mt-60">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          Discuss the scope of var, let, and const?
+        </div>
+        <div class="collapse-content">
+          <p class="px-6">
+            <span class="text-blue-400 text-lg">var:</span><br />
+            Variables declared with 'var' are function-scoped.they are
+            accessible within the function in which they are declared. If
+            declared outside any function, they become globally scoped.
+          </p>
+          <p class="px-6">
+            <span class="text-blue-400 text-lg">let:</span> <br />If we declared
+            variables with 'let' are block-scoped.'let' are only accessible
+            within the block they are declared.'let' cannot be re-declared
+            within the same scope, but they can be re-assigned.
+          </p>
+          <p class="px-6">
+            <span class="text-blue-400">const:</span><br />if we declared
+            variables with 'const' are block-scoped.'const' cannot be
+            re-assigned or re-declared within the same scope. They must be
+            initialized during declaration.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+            Tell us the use cases of null and undefined?
+        </div>
+        <div class="collapse-content">
+          <p class="px-6">
+            <span class="text-blue-400">Null:</span><br>Null in JavaScript means an empty value and is also a primitive type
+            in JavaScript. The variable which has been assigned as null contains
+            no value.
+          </p>
+          <p class="px-6">
+            <span class="text-blue-400">Undefined:</span><br>Undefined on the other hand, means the variable has been
+            declared, but its value has not been assigned.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+            What do you mean by REST API?
+        </div>
+        <div class="collapse-content">
+          <p class="px-6"><span class="text-blue-400">REST API:</span><br>A REST API is an application programming interface that conforms to the design principles of the representational state transfer architectural style.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

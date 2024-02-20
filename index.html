@@ -1,48 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PH Tube</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     
-    <div class="container flex justify-between items-center m-auto p-10  ">
+    <div class="container flex gap-10 lg:gap-0 flex-col lg:flex-row justify-between items-center m-auto p-10  ">
         <div>
             <img src="Logo.png" alt="">
         </div>
         <div>
-            <span class="bg-gray-200 text-2xl p-3 rounded-xl">Short by view</span>
+            <span id="sort_by_view_button" class="bg-gray-200 text-2xl p-3 rounded-xl">Short by view</span>
         </div>
         <div>
-            <button class="bg-red-400 text-white font-bold py-2 px-3 rounded-lg">Blog</button>
+            <button id="blog"  class="bg-red-400  w-60 lg:w-auto text-white font-bold py-2 px-3 rounded-lg">Blog</button>
         </div>
     </div>
     <hr class="text-gray-400">
-    <div class="menu_container flex justify-center items-center gap-10 mt-10">
-        <button  id="allButton" class="text-xl bg-gray-200 hover:bg-red-500 py-2 px-4 rounded-lg">
+    <div class="menu_container flex flex-col lg:flex-row justify-center items-center gap-10 mt-10">
+        <button  id="allButton" class="text-xl w-80 lg:w-auto bg-gray-200 hover:bg-red-500 py-2 px-4 rounded-lg">
         All
 
         
         </button>
-        <button id="musicButton" class="text-xl bg-gray-200 hover:bg-red-500 py-2 px-4 rounded-lg">
+        <button id="musicButton" class="text-xl w-80 lg:w-auto bg-gray-200 hover:bg-red-500 py-2 px-4 rounded-lg">
             Musics
         </button>
-        <button id="comedyButton" class="text-xl bg-gray-200 hover:bg-red-500 py-2 px-4 rounded-lg">
+        <button id="comedyButton" class="text-xl w-80 lg:w-auto bg-gray-200 hover:bg-red-500 py-2 px-4 rounded-lg">
             Comedy
         </button>
-        <button id="drawingButton" class="text-xl bg-gray-200 hover:bg-red-500 py-2 px-4 rounded-lg">
+        <button id="drawingButton" class="text-xl w-80 lg:w-auto bg-gray-200 hover:bg-red-500 py-2 px-4 rounded-lg">
             Drawing
         </button>
     </div>
     
 
-    <div id="video_container" class="m-auto grid grid-cols-4 gap-5 mt-20 mx-10 justify-evenly">
+    <div id="video_container" class="m-auto grid grid-cols-1 lg:grid-cols-4 gap-5 mt-20 mx-10 justify-evenly">
 
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
